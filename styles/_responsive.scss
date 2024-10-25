@@ -1,0 +1,26 @@
+$mobile:425px;
+$mobile-landscape: 568px;
+$tablet: 768px;
+$desktop: 992px;
+
+$breakpoints: (
+  "small": (
+    min-width: $mobile,
+  ),
+  "medium": (
+    min-width: $tablet,
+  ),
+  "large": (
+    min-width: $desktop,
+  ),
+);
+
+@mixin responsive($size) {
+  $query: map-get(map-get($breakpoints, $size), min-width);
+
+  @media (max-width: #{$query}) {
+    @content;
+  }
+}
+
+// --------------

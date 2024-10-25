@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-3 d-flex align-items-center">
+            <h1 class="fs-5 m-0">LOGO</h1>
+          </div>
+          <div class="col-6 d-md-block d-none">
+            <nav
+              class="d-flex justify-content-between align-items-center h-100 w-75 m-auto"
+            >
+              <a href="/" class="nav-link">Home</a>
+              <a href="about.html" class="nav-link">About</a>
+              <a href="products.html" class="nav-link">Products</a>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+          </div>
+          <div
+            class="col-md-3 col-9 d-flex justify-content-end align-items-center"
+          >
+            <select class="bg-dark text-light rounded p-1 d-md-block d-none">
+              <option>AZ</option>
+              <option>EN</option>
+              <option>RU</option>
+            </select>
+            <button
+              class="btn d-md-none d-block w-25 p-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <i class="fa-solid fa-bars fs-4"></i>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-top d-md-none d-block"
+              style="height: 100vh"
+              tabindex="-1"
+              id="offcanvasTop"
+              aria-labelledby="offcanvasTopLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">
+                  LOGO
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="text-center fs-2 w-75 m-auto p-0">
+                  <li>
+                    <a href="/" class="nav-link my-4 border-bottom">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="nav-link my-4 border-bottom"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html" class="nav-link my-4 border-bottom"
+                      >Products</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link my-4 border-bottom"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-around my-5 gx-4">
+                  <button class="btn btn-light w-25">EN</button>
+                  <button class="btn btn-light w-25">AZ</button>
+                  <button class="btn btn-light w-25">RU</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-section" class="position-relative">
+        <div
+          class="hero-text-box position-absolute top-0 left-0 zindex-5 h-100 px-md-5 px-2 d-flex flex-column justify-content-center text-light"
+        >
+          <h3 class="fs-lg-1 fs-4">İxtisaslaşdırılmış Qrafik Maşınlar bir sıra keyfiyyətli çap avadanlıqlarına və ikinci əl çap maşınlarına malikdir</h3>
+          <p class="hero-text-2">
+            
+            İxtisaslaşdırılmış Qrafik Maşınlar bəlkə də mövcud olan ən yaxşı çeşidlə öyünə bilər
+          </p>
+          <div class="d-flex gap-sm-3 gap-1">
+            <button class="btn text-dark btn-warning px-0 hero-products-btn">
+              Products
+            </button>
+            <button class="btn border text-light px-0 hero-contact-btn">
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid border h-100 hero-box">
+          <img class="img-fluid" src="images/home/hero_img.jpg" alt="">
+        </div>
+      </section>
+      <!-- Hero Section -->
+
+      <!-- About Section -->
+      <section>
+        <div class="container">
+          <h2 class="text-center fs-1 my-5">Haqqımızda</h2>
+          <div class="row">
+            <div
+              class="col-lg-5 col-12 p-lg-0 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="/images/home/about_us_img2.jpg"
+                class="w-100 h-100"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-7 col-12 px-lg-5 px-3 order-lg-0 order-first d-flex flex-column justify-content-center"
+            >
+              <h3 class="mb-3">
+                Tuna Printing & Publishing & Packaging Company ('TUNA' company)
+              </h3>
+              <p>
+                Tuna Printing & Publishing & Packaging Company (“TUNA” şirkəti) 18 iyun 1998-ci ildə təsis edilib. Şirkət hazırda Azərbaycanda kağız, qablaşdırma və plastik istehsalı sahəsində aparıcı müəssisələrdən biridir. Qısa müddət ərzində əldə etdiyi nailiyyətlər, göstərdiyi xidmətlərin keyfiyyəti və müştərilərin yüksək məmnuniyyəti sayəsində 'TUNA' şirkəti bu sektorda Azərbaycanın aparıcı şirkət və təşkilatları arasında layiqli yer tutmuşdur. Milenium uzun illərdir ki, AER, Şirin, Veysəloğlu və digər aparıcı şirkətlərlə əməkdaşlıq edir.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+
+      <!-- Our Products -->
+      <section id="product-slider" class="my-3">
+        <div class="product-title">
+          <h2 class="text-center fs-1 my-5">Məhsullar</h2>
+        </div>
+
+        <div class="swiper product-mySwiper px-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-product-slide position-relative">
+                <img src="./images/products/product1.jpeg" />
+                <div
+                  class="h-25 main-bg position-absolute bottom-0 w-100 text-light text-start d-flex flex-column justify-content-center p-3"
+                >
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-product-slide position-relative">
+                <img src="./images/products/product2.jpg" />
+                <div
+                  class="h-25 main-bg position-absolute bottom-0 w-100 text-light text-start d-flex flex-column justify-content-center p-3"
+                >
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-product-slide position-relative">
+                <img src="./images/products/product3.jpeg" />
+                <div
+                  class="h-25 main-bg position-absolute bottom-0 w-100 text-light text-start d-flex flex-column justify-content-center p-3"
+                >
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-product-slide position-relative">
+                <img src="./images/products/product4.jpg" />
+                <div
+                  class="h-25 main-bg position-absolute bottom-0 w-100 text-light text-start d-flex flex-column justify-content-center p-3"
+                >
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-product-slide position-relative">
+                <img src="./images/products/product5.jpg" />
+                <div
+                  class="h-25 main-bg position-absolute bottom-0 w-100 text-light text-start d-flex flex-column justify-content-center p-3"
+                >
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-product-slide position-relative">
+                <img src="./images/products/product6.jpg" />
+                <div
+                  class="h-25 main-bg position-absolute bottom-0 w-100 text-light text-start d-flex flex-column justify-content-center p-3"
+                >
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Our Products -->
+
+      <!-- Chosen Products -->
+      <section id="chosen-slider">
+        <div class="">
+          <h2 class="text-center fs-1 my-5">Seçilmiş məhsullarımız</h2>
+        </div>
+        <div class="swiper chosen-mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-chosen-slide position-relative">
+                <img src="./images/products/product12.jpeg" alt="" class="" />
+                <div
+                  class="position-absolute bottom-0 left-0 main-bg w-100 text-light p-2"
+                >
+                  <h5>Lorem Ipsum</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-chosen-slide position-relative">
+                <img src="./images/products/product11.jpg" alt="" />
+                <div
+                  class="position-absolute bottom-0 left-0 main-bg w-100 text-light p-2"
+                >
+                  <h5>Lorem Ipsum</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-chosen-slide position-relative">
+                <img src="./images/products/product10.jpg" alt="" />
+                <div
+                  class="position-absolute bottom-0 left-0 main-bg w-100 text-light p-2"
+                >
+                  <h5>Lorem Ipsum</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-chosen-slide position-relative">
+                <img src="./images/products/product9.jpeg" alt="" />
+                <div
+                  class="position-absolute bottom-0 left-0 main-bg w-100 text-light p-2"
+                >
+                  <h5>Lorem Ipsum</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-chosen-slide position-relative">
+                <img src="./images/products/product8.jpg" alt="" />
+                <div
+                  class="position-absolute bottom-0 left-0 main-bg w-100 text-light p-2"
+                >
+                  <h5>Lorem Ipsum</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide rounded-4 overflow-hidden">
+              <div class="single-chosen-slide position-relative">
+                <img src="./images/products/product7.jpg" alt="" />
+                <div
+                  class="position-absolute bottom-0 left-0 main-bg w-100 text-light p-2"
+                >
+                  <h5>Lorem Ipsum</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="py-5 d-flex justify-content-center align-items-center">
+          <a href="products.html" class="btn main-bg text-light more-explore-btn"
+            >More Explore
+          </a>
+        </div>
+      </section>
+      <!-- Chosen Products -->
+
+      <!-- Statistics and Projects -->
+      <section id="statistics">
+        <div class="container">
+          <h2 class="text-center fs-1 my-5">Layihələrimiz və statistika</h2>
+          <div class="row">
+            <div class="col-md-4 col-12 p-2">
+              <div
+                class="border position-relative rounded-4 overflow-hidden single-statistic-box"
+              >
+                <img
+                  src="./images/home/statistic_bg1.jpg"
+                  class="w-100"
+                  alt=""
+                />
+                <div
+                  class="w-100 h-100 position-absolute top-0 left-0 d-flex justify-content-center align-items-center statistic-overlay"
+                >
+                  <h3 class="text-warning count" data-count="100">0</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 p-2">
+              <div
+                class="border position-relative rounded-4 overflow-hidden single-statistic-box"
+              >
+                <img
+                  src="./images/home/statistic_bg2.jpg"
+                  class="w-100"
+                  alt=""
+                />
+                <div
+                  class="w-100 h-100 position-absolute top-0 left-0 d-flex justify-content-center align-items-center statistic-overlay"
+                >
+                  <h3 class="text-warning count" data-count="20">0</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 p-2">
+              <div
+                class="border position-relative rounded-4 overflow-hidden single-statistic-box"
+              >
+                <img
+                  src="./images/home/statistic_bg3.jpg"
+                  class="w-100"
+                  alt=""
+                />
+                <div
+                  class="w-100 h-100 position-absolute top-0 left-0 d-flex justify-content-center align-items-center statistic-overlay"
+                >
+                  <h3 class="text-warning count" data-count="100">0</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Statistics and Projects -->
+
+      <!-- Our Partners -->
+      <section id="partners" class="customcontainer">
+        <h2 class="text-center fs-1">Bizim tərəfdaşlarımız</h2>
+
+        <div class="swiper partners-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/home/partner1.webp" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/home/partner2.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/home/partner3.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/home/partner4.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/home/partner5.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/home/partner6.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/home/partner7.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Partners -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 main-bg text-light">
+      <div class="container d-lg-none d-block">
+        <div class="row">
+          <div class="col-12">
+            <h4>We turn your thoughts into paper</h4>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed main-bg text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <h2 class="my-3">Links</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse main-bg text-light"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="about.html" class="nav-link">About</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="products.html" class="nav-link">Products</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed main-bg text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                <h2 class="my-3">Contact</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body main-bg text-light">
+                <ul class="list-unstyled">
+                  <li class="d-flex mb-2">
+                    <span class="mx-2"><i class="fa-solid fa-phone"></i></span>
+                    <a href="" class="nav-link"> +994 55 204 27 29</a>
+                  </li>
+                  <li class="d-flex">
+                    <span class="mx-2"
+                      ><i class="fa-regular fa-envelope fa-lg"></i
+                    ></span>
+                    <a href="" class="nav-link">alixankiwiyev@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed main-bg text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                <h2 class="my-3">Location</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li class="d-flex">
+                    <span class="mx-1"
+                      ><i class="fa-solid fa-location-dot"></i
+                    ></span>
+                    <a href="" class="nav-link"
+                      >Bakı şəh., Keşlə qəs., 1-ci Öünə küçəsi 19</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container h-100 d-lg-block d-none">
+        <div class="row h-100">
+          <div class="col-3 px-3">
+            <h1 class="mt-3 mb-5">LOGO</h1>
+            <p>We turn your thoughts into paper</p>
+            <p>© 2024 All rights reserved</p>
+          </div>
+          <div class="col-2 h-100">
+            <h2 class="my-3">Links</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="mb-2">
+                <a href="products.html" class="nav-link">Products</a>
+              </li>
+              <li class="mb-2">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h2 class="my-3">Contact</h2>
+            <ul class="list-unstyled">
+              <li class="d-flex mb-2">
+                <span class="mx-2"><i class="fa-solid fa-phone"></i></span>
+                <a href="" class="nav-link"> +994 51 290 80 04</a>
+              </li>
+              <li class="d-flex">
+                <span class="mx-2"
+                  ><i class="fa-regular fa-envelope fa-lg"></i
+                ></span>
+                <a href="" class="nav-link">alixankiwiyev@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h2 class="my-3">Location</h2>
+            <ul class="list-unstyled">
+              <li class="d-flex">
+                <span class="mx-1"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <a href="" class="nav-link"
+                  >Bakı şəh., Keşlə qəs., 1-ci Öünə küçəsi 19</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/scripts/sliders.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

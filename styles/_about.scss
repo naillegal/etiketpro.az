@@ -1,0 +1,88 @@
+
+#about-slider {
+  margin-bottom: 50px;
+  @include responsive("medium") {
+    margin-bottom: 50px;
+  }
+
+  @include responsive("large") {
+    margin-bottom: 50px;
+  }
+
+  .about-title {
+    width: 100%;
+    margin-block: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: #4b4b4b;
+      margin-bottom: 2px;
+      @include responsive("medium") {
+        font-size: 36px;
+        line-height: 48px;
+      }
+
+      @include responsive("large") {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+
+    span {
+      width: 260px;
+      border: 2px solid #fff212;
+      @include responsive("medium") {
+        width: 320px;
+        border: 2px solid #fff212;
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    @include responsive("medium") {
+      height: 400px;
+    }
+
+    @include responsive("large") {
+      width: 300px;
+    }
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-bottom: 50px;
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background-color: #ededed;
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active {
+      background-color: #00afef;
+    }
+  }
+}
+
+

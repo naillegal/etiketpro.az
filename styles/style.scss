@@ -1,0 +1,24 @@
+@import '_layout';
+@import '_home';
+@import '_about';
+@import '_contact';
+@import '_products';
+@import '_detail';
+@import '_responsive';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+a{
+    outline: none   ;
+}
+
+.main-bg{
+    background-color: rgba(31, 38, 49, 1)!important;
+}
+
