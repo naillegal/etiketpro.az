@@ -1,5 +1,3 @@
-@import './responsive';
-
 .hero-text-box {
   width: 50%;
   @include responsive('small'){
