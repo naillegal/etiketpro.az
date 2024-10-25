@@ -1,3 +1,5 @@
+@import './responsive';
+
 .hero-text-box {
   width: 50%;
   @include responsive('small'){
@@ -43,6 +45,8 @@
   clip-path: polygon(34% 100%, 61% 0, 100% 0%, 100% 100%);
   img{
     object-position: right;
+    width: 100%;
+    height: 100%;
   }
   @include responsive("medium") {
     background-size: contain;
